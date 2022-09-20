@@ -1,0 +1,72 @@
+body {
+    margin: auto;
+    margin-top: -20px ;
+}
+
+.header {
+    width: auto;
+    height: 40px;
+    background-color: azure;
+}
+
+.content img {
+    width: 100%;
+    height: 300px;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.center {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.below {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fa-solid {
+    font-size: 50px;
+    align-items: center;
+}
+
+.combine {
+   width: 200px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+input {
+    width: 300px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 5px;
+}
+
+span {
+    color: rgba(135, 152, 135, 0.347);
+}
+
