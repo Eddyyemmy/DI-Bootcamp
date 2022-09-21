@@ -1,12 +1,15 @@
 body {
     margin: auto;
-    margin-top: -20px ;
 }
 
-.header {
+nav {
     width: auto;
-    height: 40px;
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
     background-color: azure;
+
 }
 
 .content img {
@@ -53,7 +56,20 @@ ul {
 
 li {
     display: inline;
-    float: left;
+}
+
+.button {
+    float: right;
+}
+
+button {
+    background: blue;
+    color: white;
+    border-radius:15%;
+}
+
+a{
+    color: white;
 }
 
 input {
