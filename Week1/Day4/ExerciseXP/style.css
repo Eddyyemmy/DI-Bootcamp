@@ -6,19 +6,31 @@ img {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
+    width: 600px;
+    margin: 25px 15px;
 }
 
 .right-side {
-    position: relative;
+    padding: 15px;
+    width: 100%;
     background: whitesmoke;
-    min-width: auto;
-    min-height: auto;
+    padding-top: 50px;
 }
 
+.right-content {
+    text-align: center;
+}
+
+.fa-brands {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    font-size: 250%;
+}
+
+a {
+    font-size: 25px;
+}
 .left-side {
-    float: left;
-    position: absolute;
-    top: 0%;
-    left: 50%;
+    padding: 25px;
 }
