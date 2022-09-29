@@ -14,7 +14,7 @@ img {
 .right-side {
 
     padding: 15px;
-    width: 50%;
+    width: 30%;
     background: whitesmoke;
     padding-top: 50px;
 }
@@ -33,6 +33,7 @@ img {
 a {
     font-size: 18px;
     text-decoration: none;
+    color: black;
 }
 
 .left-side {
@@ -42,4 +43,10 @@ a {
 .skills {
     display: inline-block;
     padding: 0 20px;
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+    padding-top: 15px;
 }
