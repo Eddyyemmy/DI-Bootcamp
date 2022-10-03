@@ -1,22 +1,33 @@
 nav {
     display: flex;
     background: black;
-    padding: 15px;
     margin: -10px;
 }
 
+ul {
+    position: absolute;
+    right: 15px;
+}
+
+li {
+    display: inline;
+    padding-left: 25px;
+}
+
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+
 .fa-crown {
+    padding: 15px;
     font-size: larger;
     color: white;
     position: relative;
 }
 
-a {
-    position: absolute;
-    right: 25px;
-    text-decoration: none;
-    color: white;
-}
+
 
 footer {
     position: fixed;
