@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    background: black;
+    padding: 15px;
+    margin: -10px;
+}
+
+.fa-crown {
+    font-size: larger;
+    color: white;
+    position: relative;
+}
+
+a {
+    position: absolute;
+    right: 25px;
+    text-decoration: none;
+    color: white;
+}
+
