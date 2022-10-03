@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.item-list {
+    margin-right: 20px;
+    background-color: #faf4f4;
+}
+
+.item-detail {
+    text-align: center;
+    padding: 0 10px 5px 10px;
+}
+
+.price {
+    color: rgb(16, 179, 122);
+    font-weight: bold;
+}
+
+.discount {
+    font-size: 12px;
+    text-decoration: line-through;
+    color: #b9a8a8;
+    font-weight: bold;
+}
+
+button {
+    height: 30px;
+    font-size: 12px;
+    color: #b9a8a8;
+    font-weight: bold;
+}
+
+h1{
+    background-color: green;
+    width: 50px;
+    height: 30px;
+    border-radius: 100%;
+    font-size: 18px;
+    position: absolute;
+    text-align: center;
+    margin-left: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+    color: #faf4f4;
+}
+
+h2{
+    position: absolute;
+    background-color: red;
+    margin-left: 200px ;
+    width: 50px;
+    height: 30px;
+    border-radius: 80%;
+    color: white;
+    font-size: 18px;
+}
+
+p {
+    line-height: 10px;
+}
