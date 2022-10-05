@@ -64,11 +64,3 @@ h2{
 p {
     line-height: 10px;
 }
-
-@media screen and (min-width:600px) {
-    .item-list {
-      width: 50%;
-      float: left;
-    }
-} 
-

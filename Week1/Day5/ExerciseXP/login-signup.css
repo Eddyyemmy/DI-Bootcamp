@@ -1,0 +1,25 @@
+body {
+    background: rgb(232, 213, 213);
+}
+.container {
+    margin: 50px auto;
+    background:rgb(245, 247, 249);
+    height: 400px;
+    width: 300px;
+    padding: 25px;
+}
+
+#logo {
+    padding-left: 50%;
+    color: black;
+    font-size: xx-large;
+}
+
+input, label {
+    margin-bottom: 15px;
+}
+
+form {
+    padding-left: 25%;
+    padding-top: 5%;
+}
