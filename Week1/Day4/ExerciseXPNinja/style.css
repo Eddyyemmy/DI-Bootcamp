@@ -7,6 +7,16 @@
 	background: whitesmoke;
 }
 
+.hr-wrap {
+	display: flex;
+}
+
+hr {
+	width: 25%;
+	margin: auto; 
+}
+
+
 .login, .side {
 	padding-left: 15px;
 	text-align: center;
@@ -42,6 +52,7 @@ label {
 	font-size: 11px;
 }
 
+ 
 #footer {
 	clear: both;
 	padding-top: 50px;
@@ -102,11 +113,7 @@ h2 {
 	font-size: small;
 }
 
-hr {
-	width: 25%;
-	margin-left: 0;
-	display: inline-block;
-}
+
 .w {
 	display: flex;
 }
