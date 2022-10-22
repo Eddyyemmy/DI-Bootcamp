@@ -1,0 +1,37 @@
+
+
+
+
+
+.parent {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+
+}
+
+
+.parent div {
+  background-color: aquamarine;
+}
+
+.one, .three {
+   height: 15vh;
+}
+
+
+.two {
+  height: 40vh;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.one, .two, .three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}

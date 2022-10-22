@@ -1,0 +1,92 @@
+body {
+    margin: auto 0;
+    background-image: url("background.jpg");
+}
+
+.zone {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    
+    border-radius:4px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 1em;
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px){ 
+    .main-nav {
+        font-size: 0.7em;
+        padding: 5px;
+    }
+}
+
+.top-button {
+    margin-left: 40px;
+    width: 200px;
+    height: 50px;
+}
+
+.form {
+    width: 600px;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 25px;
+    line-height: 30px;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.top {
+    display: inline-block;
+
+}
+
+#checkbox {
+    padding-left: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+}
+
+.submit-button {
+    margin-left: 30%;
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.sticky {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+
+.blue {
+    background-color: blue;
+    border: 0 blue;
+}
+
+.green {
+    background-color: green;
+}
