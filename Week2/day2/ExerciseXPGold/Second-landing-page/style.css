@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
+
+.zone {
+    cursor: pointer;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+}
+
+
+.main-nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+}
+
+.push {
+    margin-left: auto;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+li {
+    padding: 15px;
+}
+
+.logo {
+    display: flex;
+    font-size: 2em;
+    align-items: center;
+   
+}
+
+a {
+    text-decoration: none;
+    color:antiquewhite
+}
+
+.active {
+    color: blue;
+}
+
+.cover {
+    background-color: #bbb;
+}
+
+.container {
+    background-color: #bbb;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.heading {
+    font-size: 0.7em;
+    text-align: center;
+    line-height: 5px;
+}
+
+.Pricing-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    font-size: 0.5em;
+}
+
+.button {
+    width: 15s0px;
+    height: 30px;
+    color: blue;
+    border: 1px solid blue;
+}
+
+select {
+    margin-left: 5px;
+}
+
+/* CARD */
+
+.card-wrapper {
+    display: flex;
+    font-size: 0.5em;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    height: 40%;
+}
+
+.card-price {
+    background-color: #fff;
+    padding: 25px;
+    text-align: center;
+}
+
+.card-detail {
+    background-color: blue;
+    color: #fff;
+}
+
+li {
+    list-style: none;
+    margin: 0;
+}
+
+hr {
+    color: #bbb;
+    width: 100%;
+}
+
+.sticky {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    right: 5px;
+    font-size: 0.5em;
+    background-color: blue;
+    color: #fff;
+}
+
+.green {
+    background-color: green;
+}
+
+.white {
+    color:#fff;
+}
+
+.price{
+    font-size: 2em;
+}
+
+.p {
+    font-size: 0.5em;
+    padding-top: 0;
+}
+
+.fa-face-smile {
+    font-size: xx-large;
+}
+
+.fa-message-dots {
+    font-size: medium;
+}
+
+.h3 {
+   font-size: 18px;
+}
