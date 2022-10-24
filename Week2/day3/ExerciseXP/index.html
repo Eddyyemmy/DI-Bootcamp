@@ -1,14 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Picker</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Componets</title> -->
+    <title>Components</title>
+    <link rel="stylesheet" href="bootstrap.css">
 </head>
 <body>
-    <label for="colorpicker">Color Picker:</label>
-    <input type="color" id="colorpicker" value="#0000ff">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Project Exercise #9</a>
+        <div class="collapse navbar-collapse" id="collapsed-content">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+            <li class="nav-item active btn-bg-primary">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            
+                <a class="btn btn-outline-light dropdown-toggle border-0" data-toggle="dropdown" href="#">
+                  Dropdown
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                    <li>1</li>
+                </ul>
+
+                <div class="dropdown-menu">
+                    <!-- Link or button to toggle dropdown -->
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                      <li><a tabindex="-1" href="#">Action</a></li>
+                      <li><a tabindex="-1" href="#">Another action</a></li>
+                      <li><a tabindex="-1" href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li><a tabindex="-1" href="#">Separated link</a></li>
+                    </ul>
+                  </div>
+                  
+            
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Username">
+            <input class="form-control mr-sm-2" type="text" placeholder="Password">
+            <button class="btn btn-outline-light bg-success" type="submit">Sign In</button>
+          </form>
+        </div>
+      </nav>
 </body>
 </html>

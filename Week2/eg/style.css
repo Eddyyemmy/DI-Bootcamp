@@ -3,7 +3,7 @@
 .main-div {
     border: 1px solid red;
     display: flex;
-    justify-content: space space-between;
+    justify-content: space-between;
     height: 250px;
     width: 60%;
     border-bottom: 4px solid black;
@@ -33,7 +33,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    justify-item: center;
+    justify-content: center;
 
 }
 
