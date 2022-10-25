@@ -18,7 +18,7 @@ if (x > y) {
 // // Instructions
 // Create a variable called newDog where it’s value is “Chihuahua”.
 
-var newDog = "Chihuahua";
+const newDog = "Chihuahua";
 
 // Check and display how many letters are in newDog.
 
@@ -26,8 +26,8 @@ console.log(newDog.length);
 
 // Display the newDog variable in uppercase and then in lowercase (no need to create new variables, just console.log twice).
 
-console.log(newDog.toUpperCase);
-console.log(newDog.toLowerCase)
+console.log(newDog.toUpperCase());
+console.log(newDog.toLowerCase());
 
 if (newDog == "Chihuahua") {
     console.log("I love Chihuahua, it's my favourit dog breed");
