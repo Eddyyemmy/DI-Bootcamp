@@ -79,3 +79,21 @@ let usersConnected = users.length;
         default:
         console.log(' ${users[0]} and ${users[1]} ${users[usersConnected -2]} more users are connected}');
 }
+
+
+
+// const users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000"];
+
+// let sentence;
+// if (users.length === 0) {
+//     sentence = "No one is online";
+// } else if (users.length === 1) {
+//     sentence = `${users[0]} is online`;
+// }else if (users.length === 2) {
+//     sentence = `${users[0]} and ${users[1]} are online`;
+// }else {
+//     const remainingUsers = users.length - 2; 
+//     sentence = `${users[0]}, ${users[1]} and ${remainingUsers} more are online`;
+// }
+
+// console.log(sentence);

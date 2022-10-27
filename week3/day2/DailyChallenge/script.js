@@ -29,9 +29,7 @@ console.log(fruits.reverse(' '))
 
 const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
 
-let myFruits = moreFruits[1][1];
-
-console.log(myFruits);
+console.log(moreFruits[1][1][0]);
 
 // Write a JavaScript function to check whether an `input` is an array or not. Go to the editor
 // Test Data :
