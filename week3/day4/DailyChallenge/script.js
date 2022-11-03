@@ -11,19 +11,34 @@
 // For example, the result here should be : “The movie is good, I like it”
 // If the word “bad” does not come after “not” or the words are not in the sentence, console.log the original sentence.
 
-const sentence = "This dinner is not that bad ! You cook well"
-const wordNot = sentence.search("not")
-const wordBad = sentence.search("bad")
+// const sentence = "This dinner is not that bad ! You cook well"
+// const wordNot = sentence.search("not")
+// const wordBad = sentence.search("bad")
 
-if (wordNot === -1) {
-    console.log(sentence)
-} else if (wordNot < wordBad) {
-    // console.log('wordBad:', wordBad)
-    // console.log('wordNot:', wordNot)
+// if (wordNot === -1) {
+//     console.log(sentence)
+// } else if (wordNot < wordBad) {
+//     // console.log('wordBad:', wordBad)
+//     // console.log('wordNot:', wordNot)
 
-    const firstPart = sentence.slice(0, wordNot)
-    const secondPart = sentence.slice(wordBad + 3)
-    console.log(firstPart + "good" + secondPart)
+//     const firstPart = sentence.slice(0, wordNot)
+//     const secondPart = sentence.slice(wordBad + 3)
+//     console.log(firstPart + "good" + secondPart)
+// } else {
+//     console.log(sentence)
+// }
+
+let sentence = "This dinner is not that bad ! The food taste delicious";
+
+let wordNot = sentence.indexOf("not");
+let wordBad = sentence.indexOf("bad");
+
+console.log(wordNot);
+console.log(wordBad);
+
+if (wordNot < wordBad && wordBad != -1 && wordNot != -1) {
+    sentence = sentence.substring(0,wordNot) + sentence.substring(wordBad + 3, sentence.length)
+    console.log(sentence);
 } else {
-    console.log(sentence)
+    console.log(sentence);
 }
