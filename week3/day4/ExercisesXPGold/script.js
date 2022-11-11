@@ -13,20 +13,20 @@
 // If the user speaks Hebrew : display “Shalom”
 // If the user doesn’t speak any of these 3 languages: display ‘01110011 01101111 01110010 01110010 01111001’
 
-let text;
-let lang = prompt("Enter your language");
+// let text;
+// let lang = prompt("Enter your language");
 
-let capLang = lang.toLowerCase();
+// let capLang = lang.toLowerCase();
 
-if (capLang === "english") {
-    console.log('Hello');
-} else if (capLang === "french") {
-    console.log('Bonjour');
-} else if (capLang === "hebrew") {
-    console.log('Shalom');
-} else{
-    console.log('01110011 01101111 01110010 01110010 01111001');
-}
+// if (capLang === "english") {
+//     console.log('Hello');
+// } else if (capLang === "french") {
+//     console.log('Bonjour');
+// } else if (capLang === "hebrew") {
+//     console.log('Shalom');
+// } else{
+//     console.log('01110011 01101111 01110010 01110010 01111001');
+// }
 
     // switch (capLang) {
     //     case "english":
@@ -52,31 +52,40 @@ if (capLang === "english") {
 // If the grade is between 70(included) and 80 (included), console.log “C”
 // If the grade is lower than 70, console.log “D”
 
-let assignGrade = prompt("What is your Grade Score");
+// let assignGrade = prompt("What is your Grade Score");
 
-    if (assignGrade >= 90) {
-        console.log( 'Your grade is A');
-    } else if (assignGrade >= 80 && assignGrade <= 90) {
-        console.log( 'Your grade is B');
-    } else if (assignGrade >= 70 && assignGrade <= 80) {
-        console.log( 'Your grade is C');
-    } else if (assignGrade <= '70'){
-        console.log( 'Your grade is D');
-    }
+//     if (assignGrade >= 90) {
+//         console.log( 'Your grade is A');
+//     } else if (assignGrade >= 80 && assignGrade <= 90) {
+//         console.log( 'Your grade is B');
+//     } else if (assignGrade >= 70 && assignGrade <= 80) {
+//         console.log( 'Your grade is C');
+//     } else if (assignGrade <= '70'){
+//         console.log( 'Your grade is D');
+//     }
 
-// Exercise 3 : Verbing
-// Instructions
+ // Instructions
 // Prompt the user for a string. It must be a verb.
 // If the length of the string is at least 3 and the string doesn’t end with “ing”, add ‘ing’ to the end of the string.
 // If the length of the string is at least 3 and the string ends with “ing” add “ly” to it’s end.
 // If the length of the string is less than 3, leave it unchanged.
 
-let verbing = prompt("Write a verb...");
+// let verbing = prompt("Write a verb...");
 
-    if (verbing.length < 3) {
-        console.log( verbing);
-    } else if (verbing.slice(-3) == 'ing') {
-        console.log(verbing + 'ly');
-    } else {
-        console.log(verbing + 'ing');
+//     if (verbing.length < 3) {
+//         console.log( verbing);
+//     } else if (verbing.slice(-3) == 'ing') {
+//         console.log(verbing + 'ly');
+//     } else {
+//         console.log(verbing + 'ing');
+//     }
+
+let names = ["john", "sarah", 23, "rudolf", 34]
+
+for (let x in names) {
+    if (typeof names[x] != 'string') {
+        break;
     }
+
+    console.log(names[x]);
+}
