@@ -1,0 +1,10 @@
+/* // The width of the image has to be set to 100px. */
+img {
+    width: 100px;
+}
+
+/* // If the book is already read. Set the color of the book’s details to red. */
+
+.is-read {
+    color: red;
+}
