@@ -1,0 +1,30 @@
+.planet {
+
+}
+
+/* // Each planet should have a different background color. (Hint: you could add a new class to each planet - each class containing a different background-color). */
+
+.mars{
+    background-color: aqua;
+}
+.neptune{
+    background-color: antiquewhite;
+}
+.venus{
+    background-color: brown;
+}
+.earth{
+    background-color: beige;
+}
+.saturn{
+    background-color: azure;
+}
+.uranus{
+    background-color: blueviolet;
+}
+.jupiter{
+    background-color: rgb(192, 204, 18);
+}
+.pluto {
+    background-color: beige;
+}
