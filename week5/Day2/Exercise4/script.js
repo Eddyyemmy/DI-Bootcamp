@@ -21,6 +21,22 @@ const book2 = {
     alreadyRead : true
 }
 
+allBooks.push(book1, book2)
+
+let htmlString =""
+for (const book of allBooks) {
+    const rowString = `
+        <tr class="${book.alreadyRead ? 'is-read' : ''}">
+            <td>${book.title} written by ${book.author}</td>
+            <td>
+                <img src=${book.image}></img>  
+            </td>
+            <td>Already read: ${book.alreadyRead}</td>
+        </tr>
+    `
+    htmlString = htmlString + rowString
+}
+
 
 
 // Requirements : All the instructions below need to be coded in the js file:
@@ -48,7 +64,7 @@ table.innerHTML = `
         </td>
         <td>Already read: ${book2.alreadyRead}</td>
     </tr>
-
+    ${htmlString}
 </tbody>
 `
 

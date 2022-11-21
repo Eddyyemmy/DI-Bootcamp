@@ -22,5 +22,23 @@ const firstUl = document.querySelector("ul.list.student_list")
 firstUl.classList.add("university", "attendance")
 
 
+// LOOP METHODS
 
 
+// const lists = document.querySelectorAll(".list");
+
+// // FORECHH 
+// list.forEach(function (element) {
+//     element.classList.add("student_list");
+// });
+ 
+// // FOR OF (NEW LOOP METHOD)
+// for (const element of lists) {
+//     element.classList.add("student_list");
+// }
+
+// // TRADITIONAL LOOP 
+// for (let i = 0; i < lists.length; i++) {
+//     const element = lists[i];
+//     element.classList.add("student_list")
+// ;}
