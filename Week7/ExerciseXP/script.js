@@ -109,23 +109,81 @@
 // Check if at least one element of the array is equal to the value “Violet”. If yes, console.log("Yeah"), else console.log("No...")
 // Hint : Use the array methods taught in class. Look at the lesson Array Methods.
 
-const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+// const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
 
-function displayColors() {
-    for (let i = 0; i < colors.length; i++) {
-        const color = colors[i];
-        console.log(`#${i+1} choice is ${color}`)
-    }
-    return 
+// displayColors() 
+// function displayColors() {
+//     for (let i = 0; i < colors.length; i++) {
+//         const color = colors[i];
+//         console.log(`#${i+1} choice is ${color}`)
+//     } 
+// }
+
+// colors.forEach((color, i) => console.log(`#${i+1} choice is ${color}`));
+
+// function arrArg(){
+//     if (colors.includes("Violet")) {
+//         console.log("yes")
+//     } else {
+//         console.log("no")
+//     }
+// }
+// arrArg()
+
+// 1
+// const arrArg = colors.some((color) => color === "Violet");
+// console.log(arrArg)
+
+// 2
+// const arrArg = !colors.every((color) => color !== "Violet");
+// console.log(arrArg)
+
+
+// 🌟 Exercise 5 : Colors #2
+// Instructions
+// Using these arrays :
+// Write a JavaScript program that displays the colors in the following order : “1st choice is Blue .” “2nd choice is Green.” “3rd choice is Red.” ect…
+// Hint : Use the array methods taught in class and ternary operator.
+
+// const colors = ["Blue", "Green", "Red", "Orange", "Violet", "Indigo", "Yellow"];
+// const ordinal = ["th","st","nd","rd"];
+
+// colors.forEach((color, index) => {
+//     const colorsIndex = index + 1;
+//     console.log(`${colorsIndex}${getOrdinal(colorsIndex)} choice is ${color}`);
+// });
+
+//  function getOrdinal(index) {
+//     if ([1, 2, 3].includes(index)) return ordinal[index];
+//     return ordinal[0];
+// }
+
+
+// Exercise 6 : Bank Details
+// Instructions
+// In this exercise, you have to decide which type of variables you have to use (ie. let or const):
+
+// Create a global variable called bankAmount which value is the amount of money currently in your account.
+// Create a variable that saves the % amount of VAT (In Israel, it’s 17%).
+// Create an array with all your monthly expenses, both positive and negative (money made and money spent).
+// Example : const details = ["+200", "-100", "+146", "+167", "-2900"]
+// Create a program that modifies the expenses (ie. the positive AND the negative expenses) so that they will include taxes (multiply each expense by the VAT).
+// Display your current bankAccount standing at the end of the month.
+
+let bankAmount = 0;
+const vatRate = 0.17;
+
+const details = ["+200", "-100", "+146", "+167", "-2900"];
+
+const currentBankAccount = addVat(details);
+console.log("currentBankAccount:", currentBankAccount);
+
+function addVat(details) {
+    let total = 0;
+    details.forEach((details) => {
+        const numExpense = Number(details);
+        const expenseWithVat = numExpense * (1 + vatRate);
+        total = total + expenseWithVat;
+    });
+    return total;
 }
-
-function arrArg(){
-
-    if (colors.includes("Violet")) {
-        console.log("yes")
-    } else {
-        console.log("no")
-    }
-}
-displayColors() 
-arrArg()
