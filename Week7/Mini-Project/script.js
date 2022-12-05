@@ -55,26 +55,26 @@ function generateQuote() {
     console.log('Generating quote ....');
 
     let max_index = quotes.length -1;
-    console.log(max_index);
 
     const randomIndex = getRandomIdx(max_index);
-    console.log(randomIndex);
-
+ 
     const randomQuote = quotes[randomIndex];
-    console.log(randomQuote);
 
-    let generator = document.getElementById("generator");
-    let container = document.createElement("div")
+    // let generator = document.getElementById("generator");
+    let container = document.getElementById("article");
     let divAuthor = document.createElement("div");
     let divQuote = document.createElement("div");
 
     divAuthor.innerText = randomQuote.author;
+    divAuthor.className = "author";
+
     divQuote.innerText = randomQuote.quote;
-   
+    divQuote.className = "quote";
+
+    container.innerText = "";
     container.appendChild(divQuote);
     container.appendChild(divAuthor);
-
-    generator.appendChild(container);
+    // generator.appendChild(container);
 }
 
 function getRandomIdx(max) {
@@ -82,5 +82,7 @@ function getRandomIdx(max) {
 }
 
 let button = document.getElementById("bt-quote");
-
 button.onclick = generateQuote;
+
+let new_quote = document.forms.new_quote;
+console.log(new_quote);

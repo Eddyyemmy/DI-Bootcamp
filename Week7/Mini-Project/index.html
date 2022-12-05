@@ -8,12 +8,18 @@
     <title>Random Quote Generator</title>
 </head>
 <body>
-    <div class="container">
+    <form id="new_quote">
+        <input type="text" name="quote" placeholder="Add quote">
+        <input type="text" name="author" placeholder="Add author">
+        <input type="button" id="add_quote" value="Add">
+    </form>
+    <section id="generator" class="generator">
+        <button id="bt-quote">Generate Quote</button>
+            <div id="article">
+                <!-- Add Author and Quote here in javacript -->
+            </div>
+    </section>
 
-        <section id="generator">
-            <button id="bt-quote">Generate Quote</button>
-        </section>
-    </div>
     <script src="script.js"></script>
 </body>
 </html>
