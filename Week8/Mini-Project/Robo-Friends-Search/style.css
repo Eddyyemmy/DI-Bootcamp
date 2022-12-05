@@ -1,0 +1,12 @@
+body {
+    background-image: url("https://github.com/devtlv/studentsGitHub/blob/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png?raw=true");
+    height: 100vh;
+}
+
+.form-inline {
+    margin: 50%;
+}
+
+.container {
+    display: grid;
+}
