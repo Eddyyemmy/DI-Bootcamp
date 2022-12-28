@@ -75,3 +75,28 @@
 -- values(3, 4, '2021-03-03'),
 -- (3, 2, '2021-05-23'),
 -- (2, 4, '2021-08-12')
+
+
+-- select * from student
+-- inner join book
+-- on student.student_id = book.book_id
+-- inner join library
+-- on book.book_id = library.book_fk_id
+
+
+-- select name, title from student
+-- inner join book
+-- on student.student_id = book.book_id
+-- inner join library
+-- on book.book_id = library.book_fk_id
+
+-- select avg(age) from student
+-- inner join book
+-- on student.student_id = book.book_id
+-- inner join library
+
+
+-- select * from student
+delete from student where student_id = 1
+
+--- deleted
