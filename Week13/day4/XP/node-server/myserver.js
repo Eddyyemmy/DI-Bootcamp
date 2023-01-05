@@ -10,11 +10,16 @@ app.listen(3000,()=>{
 //     res.end(`<p>${data}</p><h1>Yhemolee Ltd</h1> <p>This is the first paragraph.<p> <h2>Subheading</h2>`)
 // })
 
+// app.get('/',(req,res)=>{
+//     res.setHeader('Content-Type', 'application/json');
+//     const user = {
+//         firstname: 'John',
+//         lastname: 'Doe'
+//     }
+//     res.end(JSON.stringify(user, null, 3));
+// })
+
 app.get('/',(req,res)=>{
-    res.setHeader('Content-Type', 'application/json');
-    const user = {
-        firstname: 'John',
-        lastname: 'Doe'
-    }
-    res.end(JSON.stringify(user, null, 3));
+    res.setHeader('Content-Type', 'text/html');
+    res.end(`<h1>This is an HTML tag</h1>`);
 })
