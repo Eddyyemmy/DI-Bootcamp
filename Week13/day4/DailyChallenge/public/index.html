@@ -7,9 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <input type="email"id="imput" placeholder="Email address">
-        <input type="text" id="imput" placeholder="Message me!">
+    <form action="/formdata" method="POST">
+        <label for="emial">Email</label>
+        <input type="email" name="email" placeholder="Email address">
+
+        <label for="msg">Message</label>
+        <input type="text" name="msg" placeholder="Message me!">
         <button onclick="imputValue">Input</button>
     </form>
     <script src="script.js"></script>
