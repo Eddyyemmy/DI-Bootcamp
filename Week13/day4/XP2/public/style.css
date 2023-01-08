@@ -1,0 +1,16 @@
+h2{
+    border: 1px dotted blue;
+    color: red;
+    text-align: center;
+}
+
+div{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    font-weight: bold;
+    color: blue;
+}
