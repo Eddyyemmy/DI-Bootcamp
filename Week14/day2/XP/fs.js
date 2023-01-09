@@ -2,7 +2,7 @@
 const fs = require('fs')
 
 
-fs.readFile('text.txt', 'utf8', (req,res)=>{
+fs.readFile('text.txt', 'utf8', (err,res)=>{
     console.log(res);
 })
 
