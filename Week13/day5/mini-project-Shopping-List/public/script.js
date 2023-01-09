@@ -13,8 +13,6 @@ function submitList(e){
   getList()
 }
 
-
-
 function sendListToServer(cart) {
   fetch('http://localhost:3000/items',{
     method: 'POST',
