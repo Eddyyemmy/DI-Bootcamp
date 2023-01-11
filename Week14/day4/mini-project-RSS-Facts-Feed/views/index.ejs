@@ -1,5 +1,19 @@
 
-<%- include("../partials/head") %>
-<%- include("../partials/header") %>
-<%- include("../partials/post.ejs") %>
-<%- include("../partials/footer") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('../partials/head'); %>
+</head>
+<body class="container">
+
+<header>
+  <%- include('../partials/header'); %>
+</header>
+
+<main class="jumbotron">
+  <%- include('../partials/post.ejs') %>
+</main>
+
+<footer>  <%- include('../partials/footer'); %> </footer>
+</body>
+</html>
