@@ -4,16 +4,21 @@
 <head>
   <%- include('../partials/head'); %>
 </head>
-<body class="container">
+<body>
+  <header>
+    <%- include('../partials/header'); %>
+  </header>
+  <div class="main">
 
-<header>
-  <%- include('../partials/header'); %>
-</header>
+    <section class="jumbotron">
+      <div class="jumbotron">
+        <h1>The Fact Site</h1>
+        <p>Welcome to The Fact Site</p>
+      </div>
+      <%- include('../partials/post.ejs') %>
+    </<section>
 
-<main class="jumbotron">
-  <%- include('../partials/post.ejs') %>
-</main>
-
-<footer>  <%- include('../partials/footer'); %> </footer>
+  <footer> <%- include('../partials/footer'); %> </footer>
+  </div>
 </body>
 </html>

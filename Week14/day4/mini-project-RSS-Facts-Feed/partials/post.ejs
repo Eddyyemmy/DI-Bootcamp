@@ -6,10 +6,7 @@
       <p><%= item.description %></p>
       <p><%= item.pubDate %></p>
       <p><%= item.contentSnippet %></p>
-      <p>
-        <% for (const category of item.categories){%>
-          <span><%= category %></span>
-        <%}%>
+      <p><%= item.categories.join(", ") %></p>
     </li>
   <%}%>
 </div>
