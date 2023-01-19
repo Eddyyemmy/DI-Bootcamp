@@ -1,0 +1,22 @@
+.language {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.language > * {
+    background-color: #ffebcd;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    width: 100px;
+}
+
+.language button {
+    color: green;
+    border: none;
+    cursor: pointer;
+}
+
+.language button:hover {
+    scale: 1.02;
+}
