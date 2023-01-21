@@ -1,0 +1,61 @@
+:root{
+    --primary-color: rgb(75, 83, 246);
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: appear 1s;
+    transition: background-color 1s;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.quoteBox{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    width: 70%;
+    height: 250px;
+    margin-inline: auto;
+    margin-block: 7rem;
+    padding: 25px;
+    color: var(--primary-color);
+    transition: color 1s;
+
+}
+
+.quoteBox h1 {
+    margin: 20px;
+}
+
+.quoteBox h2 {
+    font-size: 0.83em;
+    font-style: italic;
+    text-align: end;
+    margin-bottom: 20px;
+}
+
+.button-container{
+    text-align: right;
+    margin-top: auto;
+}
+
+.quoteBox button {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
