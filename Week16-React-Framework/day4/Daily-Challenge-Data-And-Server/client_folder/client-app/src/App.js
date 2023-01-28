@@ -19,8 +19,8 @@ export default class App extends React.Component {
   render() {
    return(
       <>
-        <Form />
         <h1>{this.state.messageFromServer}</h1>
+        <Form setMessage={( messageFromServer ) => this.setState({ messageFromServer })} />
       </>
    ) 
   }
