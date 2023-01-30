@@ -33,9 +33,10 @@ export default class FormComponent extends Component {
     return (
       <div>
         <h1>Sample form</h1>
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} className="inputForm">
           <div>
             <input 
+              className='text'
               type='text' 
               placeholder='First Name' 
               name='fname'
@@ -45,6 +46,7 @@ export default class FormComponent extends Component {
 
           <div>
             <input 
+              className='text'
               type='text' 
               placeholder='Last Name' 
               name='lname' 
@@ -53,37 +55,39 @@ export default class FormComponent extends Component {
           </div>
 
           <div>
-            <input type='text' placeholder='Age' name='age' value={this.age} 
+            <input  className='text' type='text' placeholder='Age' name='age' value={this.age} 
             onChange={this.handleChange}/>
           </div>
 
           <div>
-          <label>
-            <input
-              type="radio"
-              name="gender"
-              value="Male"
-              checked={this.state.gender === 'male'}
-              onChange={this.handleChange}
-            />
-            Male
-          </label>
-        </div>
-        <div>
-          <label>
-            <input
-              type="radio"
-              name="gender"
-              value="Female"
-              checked={this.state.gender === 'female'}
-              onChange={this.handleChange}
-            />
-            Female
-          </label>
-        </div>
+            <label>
+              <input
+                className='radiobutton'
+                type="radio"
+                name="gender"
+                value="Male"
+                checked={this.state.gender === 'male'}
+                onChange={this.handleChange}
+              />
+              Male
+            </label>
+          </div>
           <div>
-            <label for="destination">Select your destination</label> <br/>
-            <select id="destination" name="destination" value={this.lname}
+            <label>
+              <input
+                className='radiobutton'
+                type="radio"
+                name="gender"
+                value="Female"
+                checked={this.state.gender === 'female'}
+                onChange={this.handleChange}
+              />
+              Female
+            </label>
+          </div>
+          <div>
+            <label className='destination-header'>Select your destination</label> <br/>
+            <select className='destination-input' name="destination" value={this.lname}
               onChange={this.handleChange}>
               <option value="#">-- Please choose a destination --</option>
               <option value="thailand">Thailand</option>
@@ -91,27 +95,28 @@ export default class FormComponent extends Component {
               <option value="brazil">Brazil</option>
             </select>
           </div>
+          <br />
+          <legend className='restrictions-title'>Dietary restriction:</legend>
+          <div className='restrictions'>
+            <input type="checkbox" id="nutsfree" name="dietary" onChange={this.handleChange}/>
+            <label for="nutsfree">Nuts free</label>
+            
+            <br />
+            <input type="checkbox" id="lactosefree" name="lactose" onChange={this.handleChange}/>
+            <label for="lactosefree">Lactose free</label>
+            
+            <br />
+            <input type="checkbox" id="vegan" name="vegan" onChange={this.handleChange}/>
+            <label for="vegan">Vegan</label>
+          </div>
 
-            <legend>Dietary restriction:</legend>
-            <div>
-              <input type="checkbox" id="nutsfree" name="dietary" onChange={this.handleChange}/>
-              <label for="nutsfree">Nuts free</label>
-            </div>
-
-            <div>
-              <input type="checkbox" id="lactosefree" name="lactose" onChange={this.handleChange}/>
-              <label for="lactosefree">Lactose free</label>
-            </div>
-
-            <div>
-              <input type="checkbox" id="vegan" name="vegan" onChange={this.handleChange}/>
-              <label for="vegan">Vegan</label>
-            </div>
-            <button type="submit">Submit</button>
+          <button className='submit' type="submit">Submit</button>
         </form>
 
+        <hr></hr>
+
         <div className='display'>
-          <h1>Entered Information</h1>
+          <h2>Entered Information</h2>
           <p>Your name: {this.state.fname} {this.state.lname}</p>
           <p>You Age: {this.state.age}</p>
           <p>Your gender: {this.state.gender.toString()}</p>

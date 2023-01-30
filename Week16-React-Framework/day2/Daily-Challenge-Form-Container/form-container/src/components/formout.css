@@ -1,7 +1,74 @@
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+}
+
+h1 {
+    background-color: #3b3636;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+ 
+.inputForm {
+    background-color: #deb887;
+    margin: 0;
+}
+
+.text {
+    margin: 8px 0 8px 10px;
+    width: 50%;
+    border-radius: 3px;
+    height: 25px;
+    font-weight: 700;
+}
+
+.radiobutton {
+    margin-left: 10px;
+    height: 20px;
+}
+
+.destination-header {
+    font-weight: 600;
+    margin: 10px;
+}
+
+.destination-input {
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.restrictions-title {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.restrictions {
+    margin-left: 30px;
+    padding-bottom: 25px;
+}
+
+.submit {
+    padding: 10px;
+    width: 100px;
+    margin: 10px;
+    position: relative;
+    left: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
 .display {
-    background-color: green;
+    background-color: #1e5555;
     color: white;
-    width: 300px;
-    padding-inline: 15px;
-    padding-bottom: 10px;
+    margin: 0;
+    padding: 5px 10px;
 }
