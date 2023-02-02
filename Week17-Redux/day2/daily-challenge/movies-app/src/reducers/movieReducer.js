@@ -1,15 +1,28 @@
-import { createStore } from "redux";
+import { combineReducers, createStore } from "redux";
+import { SELECT_MOVIE } from "../actions/movieActions";
 
-const initialState = [
+
+const MovieList = [
     {title: 'Spider-Man: Homecoming', releaseDate: '05-07-2017', rating: 7.4,},
     {title: 'Aquaman', releaseDate: '12-07-2018', rating: 7,},
     {title: 'Black Panther', releaseDate: '02-13-2018', rating: 7.4,},
     {title: 'Avengers: Infinity War', releaseDate: '04-25-2018', rating: 8.3,},
     {title: 'Guardians of the Galaxy', releaseDate: '07-30-2014', rating: 7.9,},
-  ]
+  ];
 
-function movieReducer(state = initialState, action) {
+function movieReducer(state = MovieList, action) {
   return state;
 }
 
-export const store = createStore(movieReducer);
+function selectedMovieReducer(state = null, action) {
+  console.log('OK', action);
+  console.log('sa',state);
+  if ((action.type === SELECT_MOVIE)) return action.title
+  return state;
+}
+
+const rootReducer = combineReducers({
+  movies: movieReducer,
+  selectedMovie: selectedMovieReducer
+});
+export const store = createStore(rootReducer);
