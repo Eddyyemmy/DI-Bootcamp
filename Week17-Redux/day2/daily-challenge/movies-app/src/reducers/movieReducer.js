@@ -10,14 +10,17 @@ const MovieList = [
     {title: 'Guardians of the Galaxy', releaseDate: '07-30-2014', rating: 7.9,},
   ];
 
+function getMoviesFromTitle(title) {
+    const movie = MovieList.find((movie) => movie.title === title);
+    return movie;
+  }
+
 function movieReducer(state = MovieList, action) {
   return state;
 }
 
-function selectedMovieReducer(state = null, action) {
-  console.log('OK', action);
-  console.log('sa',state);
-  if ((action.type === SELECT_MOVIE)) return action.title
+function selectedMovieReducer(state = {}, action) {
+  if (action.type === SELECT_MOVIE) return getMoviesFromTitle(action.title);
   return state;
 }
 
