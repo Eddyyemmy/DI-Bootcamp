@@ -1,0 +1,19 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    margin-bottom: .5rem;
+}
+
+.container {
+    width: 25rem;
+}
+
+#transactions {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#transactions > * {
+    border: 1px solid white;
+}
